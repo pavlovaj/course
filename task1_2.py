@@ -1,3 +1,7 @@
-n = [1, 10, 13, 10, 1, 2, 5, 2]
-conunt = n.count(int('13'))
-print(conunt)
+a = input("Ввод:")
+def duplicates(a):
+    if len(set(a)) == len(a):
+        return("Дубликатов нет.")
+    else:
+        return("Есть дубликаты.")
+print(duplicates(a))
