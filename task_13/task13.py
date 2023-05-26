@@ -1,8 +1,6 @@
 import xml.etree.ElementTree as etree
 import unittest
 
-import os
-
 path = '/Users/jul/PycharmProjects/course/task_13/annot.opcorpora.no_ambig.xml'
 
 
