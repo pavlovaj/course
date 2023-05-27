@@ -1,11 +1,11 @@
 import csv
 
-with open("stage3_test.csv", 'r') as f:
-    reader = csv.reader(f, delimiter=',')
+with open("stage3_test.csv", 'r') as a:
+    reader = csv.reader(a, delimiter=',')
     headers = next(reader, None)
-    with open('cost.csv', 'w') as f:
+    with open('cost.csv', 'w') as b:
 
-        writer = csv.writer(f, delimiter=',')
+        writer = csv.writer(b, delimiter=',')
         if headers:
             writer.writerow(headers)
         for row in reader:
