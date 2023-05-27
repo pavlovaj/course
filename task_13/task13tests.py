@@ -9,7 +9,7 @@ class CorpusTest(unittest.TestCase):
         self.Corpus.load(path)
 
     def test_sent_string(self):
-        self.assertIsInstance(self.Corpus.getNthSentence().string, str)
+        self.assertIsInstance(self.Corpus.getNthSentence().getString(), str)
 
     def test_wf_string(self):
         self.assertIsInstance(self.Corpus.getNthSentence().getNthWordform().getString(), str)
